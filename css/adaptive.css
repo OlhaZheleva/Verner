@@ -1,0 +1,65 @@
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .menu__icon {
+            display: none;
+        }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu__icon {
+            display: none;
+        }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu__item:nth-child(1),
+    .menu__item:nth-child(2),
+    .menu__item:nth-child(3),
+    .header__logo {
+        margin-right: 30px;
+    }
+        .menu__icon {
+            display: none;
+        }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    [class*='__container'] {
+    padding: 0px 20px;
+}
+
+.menu__body,
+.lang { 
+    display: none;
+}
+.main__decor-shadow {
+    display: none;
+}
+.main__decor { 
+    width: 203px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    top: 3.875rem;
+}
+.main__content { 
+    padding: 369px 0px 0px 0px ;
+}
+.main__title {
+   max-width: 100%;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .main__title {
+        font-size: calc(30px + 3 * (100vw / 1200));
+    }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {}
