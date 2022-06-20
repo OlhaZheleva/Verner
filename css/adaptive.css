@@ -52,6 +52,11 @@
 .main__title {
    max-width: 100%;
 }
+
+.mission__items {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 }
 
 /* Portrait phones and smaller */
